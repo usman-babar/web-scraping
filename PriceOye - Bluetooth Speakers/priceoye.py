@@ -5,8 +5,8 @@ import requests
 # List to store individual product attributes
 products = []
 
-for n in range(1, 20):  # Loop through pages
-    url = "https://priceoye.pk/bluetooth-speakers?page=" + str(n)
+for n in range(2, 20):  # Loop through pages
+    url = "https://priceoye.pk/wireless-earbuds?page=" + str(n)
     res = requests.get(url)
     soup = BeautifulSoup(res.text, "lxml")
     box = soup.find("div", class_="filter-blist-sec")
