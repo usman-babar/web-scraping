@@ -61,6 +61,7 @@ for n in range(1, 20):  # Loop through pages
     print(f"Scraped {len(product_containers)} products from page {n}")
     print("\n")
 
+
 # Convert the list of dictionaries into a DataFrame
 df = pd.DataFrame(products)
 
