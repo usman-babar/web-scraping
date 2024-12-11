@@ -18,7 +18,7 @@ for n in range(1, 3):  # Loop through pages
         continue
 
     # Extract all product containers from the page
-    product_containers = box.find_all("product-card", class_="product-card")  # Replace "p-item" with the class that wraps each product if needed
+    product_containers = box.find_all("product-card", class_="product-card")  
 
     # print(f"product_containers: {product_containers}")
     print("\n")
